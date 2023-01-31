@@ -22,7 +22,7 @@ Thumbs.db
 .eggs/
 
 # React-specific files
-# dependencies
+
 triviafrontend/node_modules/
 /.pnp
 .pnp.js
