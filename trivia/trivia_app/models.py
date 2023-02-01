@@ -3,4 +3,6 @@ from django.db import models
 # Create your models here.
 
 class Question(models.Model):
-    pass
+    question = models.TextField()
+    answer = models.CharField(max_length=255)
+    
