@@ -9,4 +9,4 @@ class Question(models.Model):
     difficulty = models.PositiveIntegerField()
 
 class Category(models.Model):
-    pass
+    type = models.CharField(max_length=50)
