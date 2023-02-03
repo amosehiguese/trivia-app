@@ -84,6 +84,14 @@ WSGI_APPLICATION = "trivia.wsgi.application"
 
 DATABASES = {
     "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "triviadb",
+        "USER": os.getenv("USER"),
+        "PASSWORD": os.getenv("PASSWORD"),
+        "HOST": "localhost",
+        "PORT": "5432",
+    },
+    "user1": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
